@@ -1,0 +1,22 @@
+{
+  "name": "@recall/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Recall Discovery worker. Internal-only service: FDA/CPSC ingestion, company-intelligence scraping, and the discovery pipeline, behind an HTTP trigger/status/cancel API.",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env.local src/server.ts",
+    "dev": "node --watch --env-file-if-exists=.env.local src/server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@recall/shared": "*",
+    "kysely": "^0.29.5",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/pg": "^8.16.0",
+    "typescript": "^5"
+  }
+}

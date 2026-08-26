@@ -1,0 +1,6 @@
+apiVersion: v2
+name: recall-worker
+description: "Recall Discovery worker. Backend service, no public route: FDA/CPSC ingestion and the discovery pipeline."
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

@@ -1,0 +1,18 @@
+{
+  "name": "recall-worker",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/recall-worker",
+    "packages/shared"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "start": "npm run start -w @recall/worker",
+    "dev": "npm run dev -w @recall/worker"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}
